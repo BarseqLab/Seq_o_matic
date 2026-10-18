@@ -100,6 +100,7 @@ Setup: check out `feature/configurable-aws-bucket` in a **separate folder** from
 10. Record results (pass/fail, log text for any failure) in this file.
 
 ## Open items
+- **Setup guide (2026-10-18):** `docs/setup_guide/Seq-o-matic_Setup_Guide.md` is the master copy (not the OneDrive .docx). The manuscript links to it on `main` (live) and ships a PDF snapshot as a supplementary file (user will make the PDF). Wording still to fix in the guide, to match the GUI: "image00" → "imagecycle00"; "Start Automation Process" → "Start Automation process"; "Fill single reagent" → "Fill"; "Wash Tubes" → "wash tubes"; "Imagecycle00" → "imagecycle00"; the "Set the storage server" bullet (now: tick "Send to storage server" / "upload to AWS", checked at Create); Figure 3A shows the old AWS account/password fields (now "unused").
 - **TO DO (user, 2026-10-16): pin `environment.yml` to Elm's versions.** On Elm run `conda list -n seq_o_matic --export > elm_env.txt`, then pin every package to those versions, rebuild `c:\barseq_envs\seqomatic-dryrun` and retest. Today the unpinned packages resolve to the newest builds (OpenCV 5.0.0, dask 2026.8, pymmcore 12.5, docstring-inheritance 3.0), probably newer than Elm's.
 - `feature/manual-aws-upload` hardcodes the bucket in two places (`aws_upload_worker.py`, `Widgets.py`). Rebase it onto the new main and make it use `storage.json` after this branch is accepted.
 - The Start button's confirmation window re-reads `scope.json` but not `storage.json`; edits to `storage.json` take effect at the next experiment creation.
