@@ -1,8 +1,9 @@
 # storage.json work: record and Elm test checklist
 
-**Last updated:** 2026-10-16
+**Last updated:** 2026-10-18
 **Branch:** `feature/configurable-aws-bucket` (from main `9f8e7d2`, the fork's `main` brought into this repo). Plan: `plans/storage_settings_plan.md`.
 **State:** implemented, reviewed four times, unit-tested and dry-run on the dev PC. **Not yet run on Elm.**
+**Merged:** 2026-10-18, `main` fast-forwarded to `e2aa747` (by the merge-warden session) and pushed to `origin` (`BarseqLab/Seq_o_matic`). The branch `feature/configurable-aws-bucket` and its worktree `.worktrees/configurable-aws-bucket` are kept for now (the worktree's untracked `figs/` holds the review scratch, dry-run reports/traces and the setup-guide conversion files). **This code is on `main` but not yet run on Elm.**
 
 ## Update 2026-10-15/16: reviews, fixes, dry run
 - **Fixes after code review:** see `plans/storage_settings_review_fixes_plan.md` (decisions D1/D2, items 1-8,
