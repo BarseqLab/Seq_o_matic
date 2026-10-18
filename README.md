@@ -193,7 +193,7 @@ Seq_o_matic/
     reagent_sequences.md             #   Protocol JSON format reference
     hardcoded_values.md              #   Per-microscope values still written in the code
     parity_inventory.md              #   Differences from the Elm reference program (with parity_inventory/)
-    setup_guide/                     #   Hardware installation and day-of setup guide
+    setup_guide/                     #   Hardware installation and day-of setup guide (path cited in the manuscript: do not move or rename)
       Seq-o-matic_Setup_Guide.md     #     The guide (figures in images/)
       Automation_Workbook.xlsx       #     Reagent calculator used by the guide
   dryrun/                            # Hardware-free dry-run harness (see dryrun/README.md)
@@ -428,6 +428,10 @@ python -m unittest discover -s dryrun/tests -t .
 The storage tests (`test_storage_settings`, `test_storage_callsites`) need no numpy or pytz, so they also run with a plain Python that has Tk (tested with 3.10 and 3.13).
 
 `dryrun/` also holds a dry-run harness that runs the whole program, GUI included, with every device replaced by a fake, and compares two versions of the code device by device. See [dryrun/README.md](dryrun/README.md). A full scenario set writes about 50 GB of scratch.
+
+### Setup Guide
+
+`docs/setup_guide/Seq-o-matic_Setup_Guide.md` is the master copy of the hardware installation and day-of setup guide. The manuscript links to it on `main` as the live version and ships a snapshot as a supplementary file, so keep the file name and folder unchanged (including `Automation_Workbook.xlsx` and `images/`), and update the version line at the top of the guide when you change it.
 
 ### Adding a New Protocol
 

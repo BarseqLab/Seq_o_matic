@@ -2,7 +2,7 @@
 
 *Installation and running guide to [Seq-o-Matic](https://github.com/BarseqLab/Seq_o_matic). Guide written by Jacob Lapka.*
 
-*Converted from `Seq-o-matic_Setup_Guide.docx` (2026-10-16). The reagent calculator workbook it refers to is [Automation_Workbook.xlsx](Automation_Workbook.xlsx), in this folder.*
+*Version 2026-10-18, for Seq-o-Matic 2.5. The latest version of this guide is at <https://github.com/BarseqLab/Seq_o_matic/blob/main/docs/setup_guide/Seq-o-matic_Setup_Guide.md>. The reagent calculator workbook it refers to, [Automation_Workbook.xlsx](Automation_Workbook.xlsx), is in the same folder: <https://github.com/BarseqLab/Seq_o_matic/blob/main/docs/setup_guide/Automation_Workbook.xlsx>.*
 
 ---
 
@@ -66,7 +66,7 @@ Reagents flow in one direction, from the rack to waste (**Fig. 1**):
     - If using less than 3 chambers, “Assign Heaters” allows for the selection individual temperature control units to run. If this is skipped while there are less than three heaters hooked up, Seq-o-Matic will read out that the heater is unable to raise the temperature and will run into an error.
     - Set the storage server. There are options to either upload the image output files to a local server, or alternatively, upload the files directly to AWS. For detailed information on how to input the specific pathways for these options, please refer to [Setting up another lab (storage.json)](../../README.md#setting-up-another-lab-storagejson) in the README.
     - Click "Create Your Experiment," everything below it is disabled until you do. *If you later edit anything prior to this step (such as slices per slide or the protocol.csv file), click this button again and reconfigure devices.*
-7. **Configure devices** from the device pull-downs. The heater must be plugged in to configure; if the stage chamber is not ready, configure it later (step 15).
+7. **Configure devices** from the device pull-downs. The heater must be plugged in to configure; if the stage chamber is not ready, configure it later (step 19).
     - If configuration fails, check that ports recognize the correct devices. Unplug and replug the USB hub, and restart Seq-o-Matic if needed.
 8. **Confirm storage:** usually at least 5 TB free on the first data drive (for raw data) and 7 TB on the second drive (for max projection data) are effective buffers. The first must contain enough space for a full cycle of image stacks from which maximum projections are made and transferred to the second data drive. The second drive receives these image files for every cycle.
 
