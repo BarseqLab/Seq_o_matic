@@ -33,7 +33,7 @@ Reagents flow in one direction, from the rack to waste (**Fig. 1**):
 - **Chamber connections:** input line to input side, output line to output side. Attach fittings onto the metal pipe of chamber top prior to hooking up samples to fluidics (**Fig. 2D**). This provides a secure connection to add the input tubing without damaging the chamber top.
 - **Liquid handling:** reagent tubing must reach the tube bottoms, with lids only lightly screwed on (tight lids pull a vacuum). Waste lines must not touch waste liquid, as this can result in backflow. Clean any drips immediately.
 - **Software recognition:** check that the COM ports assigned for each device match the config files in Seq-o-Matic.
-- **Wash tubing and reusable equipment after every run.** Seq-o-Matic is equipped with a “Wash Tubes” function that runs 4 mL (per chamber) of fluid through every line. It is recommended to wash with water in place of every reagent after every run to prevent particulate or chemical build-up within the tubing system.
+- **Wash tubing and reusable equipment after every run.** Seq-o-Matic is equipped with a “wash tubes” function that runs 4 mL (per chamber) of fluid through every line. It is recommended to wash with water in place of every reagent after every run to prevent particulate or chemical build-up within the tubing system.
 - **Maintain microfluidic system:** the frequency of system maintenance varies with use and level of preventative care. For example, we have developed a schedule that calls for a 0.2% sodium azide wash (using the “prime lines” function) every two months after changing out all the tubing. Always follow these washes with two water washes using the “wash tubes” function. We change out all tubing, fastenings, and fittings every 3 – 5 months to prevent potential points of failure.
 - **A comprehensive list** of the different consumables and components discussed in this guide can be found in [**Table 1**](#table-1).
 
@@ -56,7 +56,7 @@ Reagents flow in one direction, from the rack to waste (**Fig. 1**):
 1. **Restart** the control computer at least every 2 weeks; a full memory cache slows imaging.
 2. **Start Micro-Manager** and load up the microscope configuration.
 3. **Open Seq-o-Matic.** Use a terminal to open the `code/` directory of Seq-o-Matic and run `python mainwindow.py` to launch the application GUI (**Fig. 3A**).
-4. **Create the experiment directory** on the first data drive and place the protocol (protocol.csv) in it. This file contains the automation sequence to follow based on primers, probes, and conditions used in the experiment. The format starts with “process” and must include “image00” prior to the first round of imaging to properly mark the imaging field and set the focus. An example of 7 gene sequencing cycles followed by 1 hybridization cycle can be found in **Fig. 3B**.
+4. **Create the experiment directory** on the first data drive and place the protocol (protocol.csv) in it. This file contains the automation sequence to follow based on primers, probes, and conditions used in the experiment. The format starts with “process” and must include “imagecycle00” prior to the first round of imaging to properly mark the imaging field and set the focus. An example of 7 gene sequencing cycles followed by 1 hybridization cycle can be found in **Fig. 3B**.
 5. **Load the correct reagent-sequence files.** Copy the default reagent.json files over the same-named files in the Seq-o-Matic reagent sequence folder. This ensures that every time, the correct .json files are using the correct files, and it can be time consuming to manually check the files every time. These files only change when altering the chamber size and amount of fluid exchange needed for the sample. Otherwise, they should remain as the default files.
 6. **Configure the experiment** in Seq-o-Matic:
     - Select the directory and enter experiment details (to edit later, edit the .csv in the directory).
@@ -121,7 +121,7 @@ Reagents flow in one direction, from the rack to waste (**Fig. 1**):
 18. **Move stage insert** and chambers to microscope.
 19. **Configure the heater before plumbing.** Plug in the heater cable firmly. A failed configuration may mean a faulty chamber top, which is easier to swap before lines are attached. Sometimes during configuration, the thermistor does not yet register a temperature change in the slide, and an error will display that the device failed to raise the temperature. If this is the case, configuring the heaters again will typically solve the issue. This is not an issue during runs as the heating step is much longer than a few seconds.
 20. **Plumb the chamber:** replace screws and ferrules at active junctions, connect input and output lines (see [Hardware Installation](#hardware-installation) and **Fig. 2D, E**).
-21. **Fill with PBST** (select the reagent, "Fill single reagent") and clear any bubbles in the lines and at the new connections:
+21. **Fill with PBST** (select the reagent, "Fill") and clear any bubbles in the lines and at the new connections:
     - Hold the chamber with the output up and tap until bubbles clear (tap against a sturdy shelf or with hand). Careful not to damage any of the lines or chambers.
     - Check for leaks and repeat until no bubbles remain.
 22. **Secure the stage insert:**
@@ -147,9 +147,9 @@ Reagents flow in one direction, from the rack to waste (**Fig. 1**):
     - Chambers bubble- and leak-free and tightly screwed to the holder.
     - Imaging cabinet lights are off.
     - Both degassers are on with a steady green light.
-25. **Click "Start Automation Process"** and confirm the first step is correct.
+25. **Click "Start Automation process"** and confirm the first step is correct.
     - Stay at least 15 min to catch potential leaks.
-    - Stay until imaging of cycles 00 and 01 has started to check focus at the extremes; if any are off, cancel the run and fix the imaging points. Restart the run with the protocol beginning at Imagecycle00.
+    - Stay until imaging of cycles 00 and 01 has started to check focus at the extremes; if any are off, cancel the run and fix the imaging points. Restart the run with the protocol beginning at imagecycle00.
 26. **Check in** everyday while the sequencing run is ongoing. Check that the images are still in focus between cycles and that there are no leaks or other unexpected issues occurring.
 27. **Takedown:** only after confirming that the run is finished and data are uploaded:
     - Connect each input line to its output line and swap reagent tubes for water tubes.
