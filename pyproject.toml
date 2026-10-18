@@ -36,8 +36,8 @@ dev = [
 seq-o-matic = "seq_o_matic.mainwindow:main"
 
 [project.urls]
-Homepage = "https://github.com/BarseqLab/Seq_o_matics"
-Repository = "https://github.com/BarseqLab/Seq_o_matics"
+Homepage = "https://github.com/BarseqLab/Seq_o_matic"
+Repository = "https://github.com/BarseqLab/Seq_o_matic"
 
 [tool.setuptools.packages.find]
 where = ["."]

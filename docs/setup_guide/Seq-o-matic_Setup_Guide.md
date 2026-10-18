@@ -1,6 +1,6 @@
 # Seq-o-Matic: Hardware Installation and Day-of Setup
 
-*Installation and running guide to [Seq-o-Matic](https://github.com/BarseqLab/Seq_o_matics). Guide written by Jacob Lapka.*
+*Installation and running guide to [Seq-o-Matic](https://github.com/BarseqLab/Seq_o_matic). Guide written by Jacob Lapka.*
 
 *Converted from `Seq-o-matic_Setup_Guide.docx` (2026-10-16). The reagent calculator workbook it refers to is [Automation_Workbook.xlsx](Automation_Workbook.xlsx), in this folder.*
 
@@ -195,5 +195,5 @@ Reagents flow in one direction, from the rack to waste (**Fig. 1**):
 
 ## Helpful links
 
-- Seq-o-Matic GitHub repository: <https://github.com/BarseqLab/Seq_o_matics>
+- Seq-o-Matic GitHub repository: <https://github.com/BarseqLab/Seq_o_matic>
 - Reagent Calculator: [Automation_Workbook.xlsx](Automation_Workbook.xlsx)
