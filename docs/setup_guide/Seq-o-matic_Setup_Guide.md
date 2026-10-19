@@ -2,7 +2,7 @@
 
 *Installation and running guide to [Seq-o-Matic](https://github.com/BarseqLab/Seq_o_matic). Guide written by Jacob Lapka.*
 
-*Version 2026-10-18, for Seq-o-Matic 2.5. The latest version of this guide is at <https://github.com/BarseqLab/Seq_o_matic/blob/main/docs/setup_guide/Seq-o-matic_Setup_Guide.md>. The reagent calculator workbook it refers to, [Automation_Workbook.xlsx](Automation_Workbook.xlsx), is in the same folder: <https://github.com/BarseqLab/Seq_o_matic/blob/main/docs/setup_guide/Automation_Workbook.xlsx>.*
+*Version 2026-10-19. The latest version of this guide is at <https://github.com/BarseqLab/Seq_o_matic/blob/main/docs/setup_guide/Seq-o-matic_Setup_Guide.md>. The reagent calculator workbook it refers to, [Automation_Workbook.xlsx](Automation_Workbook.xlsx), is in the same folder: <https://github.com/BarseqLab/Seq_o_matic/blob/main/docs/setup_guide/Automation_Workbook.xlsx>.*
 
 ---
 

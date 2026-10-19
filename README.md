@@ -1,4 +1,4 @@
-# Seq-o-Matic 2.5
+# Seq-o-Matic
 
 **Automated Laboratory Platform for In situ Sequencing**
 
@@ -24,6 +24,7 @@ Seq-o-Matic is an integrated laboratory automation system for in situ sequencing
 - [Project Structure](#project-structure)
 - [Configuration](#configuration)
 - [Experiment Workflow](#experiment-workflow)
+- [Version History](#version-history)
 - [For Developers](#for-developers)
 
 ---
@@ -187,6 +188,7 @@ Seq_o_matic/
   environment.yml                    # Conda environment definition
   requirements.txt                   # Pip dependencies
   README.md                          # This file
+  CHANGELOG.md                       # What changed in each version
   docs/                              # Documentation
     architecture.md                  #   Detailed architecture & data flow
     config_files.md                  #   JSON config file schemas
@@ -350,6 +352,12 @@ For reagent sequence format documentation, see [docs/reagent_sequences.md](docs/
 
 ---
 
+## Version History
+
+The version number is in `pyproject.toml`. [CHANGELOG.md](CHANGELOG.md) lists what changed in each version, with its date and the git commits it covers. Versions from 2.6.0 on are also tagged in git (`v2.6.0`, ...).
+
+---
+
 ## For Developers
 
 ### Entry Point
@@ -432,6 +440,14 @@ The storage tests (`test_storage_settings`, `test_storage_callsites`) need no nu
 ### Setup Guide
 
 `docs/setup_guide/Seq-o-matic_Setup_Guide.md` is the master copy of the hardware installation and day-of setup guide. The manuscript links to it on `main` as the live version and ships a snapshot as a supplementary file, so keep the file name and folder unchanged (including `Automation_Workbook.xlsx` and `images/`), and update the version line at the top of the guide when you change it.
+
+### Releasing a New Version
+
+1. Set `version` in `pyproject.toml`.
+2. In `CHANGELOG.md`, move the items under **Unreleased** into a new section with the version, the date and the commits it covers.
+3. Commit, then tag the commit `v<version>` (for example `git tag -a v2.6.0 -m "Seq-o-Matic 2.6.0"`) and push the tag (`git push origin v2.6.0`).
+
+The documents call the program "Seq-o-Matic" without a version number, so nothing else needs changing.
 
 ### Adding a New Protocol
 

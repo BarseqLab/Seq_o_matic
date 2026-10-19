@@ -1,4 +1,4 @@
-# Seq-o-Matic 2.5 -- Production Dependencies
+# Seq-o-Matic -- Production Dependencies
 pyserial==3.5
 numpy==1.26.0
 pandas==1.5.3

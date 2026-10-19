@@ -1,4 +1,4 @@
-# Seq-o-Matic 2.5 -- Architecture Guide
+# Seq-o-Matic -- Architecture Guide
 
 ## System Architecture
 

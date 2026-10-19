@@ -1,5 +1,5 @@
 """
-Seq-o-Matic 2.5 -- Application entry point.
+Seq-o-Matic -- Application entry point.
 
 Creates the main Tkinter window (via Log_window), instantiates the
 window_widgets controller with all UI panels, lays out the grid,
