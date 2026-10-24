@@ -4,7 +4,7 @@ build-backend = "setuptools.backends._legacy:_Backend"
 
 [project]
 name = "seq-o-matic"
-version = "2.6.0"
+version = "2.6.1"
 description = "Automated laboratory platform for spatial transcriptomics sequencing"
 readme = "README.md"
 license = {text = "MIT"}

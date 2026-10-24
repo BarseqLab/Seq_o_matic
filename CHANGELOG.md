@@ -6,6 +6,14 @@ Each version names the git commits it covers. Versions from 2.6.0 on also have a
 
 ## [Unreleased]
 
+## [2.6.1] - 2026-10-24
+
+**Commits:** everything after the tag `v2.6.0` up to the tag `v2.6.1`.
+
+### Changed
+- `scope.json` ships with a 30 um z-stack (was 250 um), still at 1.5 um steps: 20 imaging planes, one projection per tile, and a 60 um focus sweep of 40 planes at 1.5 um. This is the same stack as 2.5.0 and the code default. Set `z_stack_thickness_um` again for thick sections (see [Z-stack thickness keys](docs/config_files.md#z-stack-thickness-keys)).
+- README links the syringe-pump version from the Zador lab and the Seq-o-Matic AI Assistant.
+
 ## [2.6.0] - 2026-10-19
 
 **Commits:** everything after `6daf2a0` up to the tag `v2.6.0`.
